@@ -12,3 +12,39 @@ function setmood(string memory _mood) public{mood = _mood;}
 function getmood() public view returns(string memorty){return mood;}
 
 }
+
+const MoodContractABI = [
+   {
+      "constant": true,
+      "inputs": [],
+      "name": "getMood",
+      "outputs": [
+         {  
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+         }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+     },
+     {
+         "constant": false,
+         "inputs": [
+            {
+               "internalType": "string",
+               "name": "_mood",
+               "type" : "string"
+            }
+        ],
+           "name": "setMood",
+            :outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": :function"
+         }
+      ]
+
+
+               
